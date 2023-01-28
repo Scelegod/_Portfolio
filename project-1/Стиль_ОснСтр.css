@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+}
+body { /* Общие настройки */
+    background:
+            url("Бэй_Доу_bg2.png") 30% 30% no-repeat fixed,
+            url("Фон_Основной_страницы.jpeg") no-repeat fixed;
+    background-size: auto, cover;
+    animation: BeiDoy 20s linear infinite;
+
+    font-family: "Times New Roman", sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+}
+@keyframes BeiDoy{
+    from {background-position: 3000px 500%, 0 0}
+    to {background-position: -2000px 500%,  0 0}
+}
+
+h1 {
+    width: 255px;
+    margin: 10px auto 20px;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 0;
+    color: red;
+}
+
+.container {
+    width: auto;
+    margin: 10px;
+    padding: 0 0;
+
+}
+
+.site-razdel {
+    min-width: 0;
+    height: 80px;
+    margin-bottom: 70px;
+    padding-top: 30px;
+    background: #847462 no-repeat center url("Раздел_ОснСтр.jpg");
+    background-size: auto;
+
+}
+table{ /* Настройки таблицы*/
+    text-align: center;/*Положение текста в таблтице*/
+    border: 2px solid black;/*Границы и цвет*/
+    font-size: 230%; /*Размер текста*/
+    height: 0;
+    color: red;
+
+}
+td{ /* Настройки строк*/
+    border: 1px solid black; /*Границы и цвет*/
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+b{
+    color: rgb(255, 164, 0);
+}
+.sprite{
+    width: 128px; height: 128px;
+    background: url("Спрайты_640х128.png") no-repeat;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+}
+.sprite:hover{
+    background-position: -256px 0;
+}
+.gradient{
+    background: linear-gradient(to top left, greenyellow, olivedrab);
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 15px;
+}
+.gradient1{
+    background: linear-gradient(to top, transparent, rgba(64,42,26,73), rgba(34,15,64,23), rgba(42,73,34,55),transparent);
+    color: white;
+    padding: 100px;
+    font-size: 20px;
+
+}
